@@ -1,0 +1,69 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+ext {
+    PUBLISH_GROUP_ID = 'co.pamobile.pacore'
+    PUBLISH_ARTIFACT_ID = 'core-library'
+    PUBLISH_VERSION = '1.1'
+}
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE-FIREBASE.txt'
+        exclude 'META-INF/NOTICE'
+    }
+}
+
+dependencies {
+    implementation 'com.github.bumptech.glide:glide:4.6.1'
+    implementation 'com.google.code.gson:gson:2.8.1'
+    implementation 'com.afollestad.material-dialogs:core:0.9.0.1'
+    implementation 'com.afollestad.material-dialogs:commons:0.9.0.1'
+    implementation 'com.github.amlcurran.showcaseview:library:5.4.3'
+    //    implementation 'dev.dworks.libs:volleyplus:+'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'com.github.d-max:spots-dialog:0.7@aar'
+    //implementation 'com.baoyz.pullrefreshlayout:library:1.2.0'
+    implementation 'com.github.orangegangsters:swipy:1.2.3@aar'
+    implementation 'com.android.volley:volley:1.1.0-rc2'
+    implementation 'com.github.ViksaaSkool:AutoFitEditText:53238e2d29'
+    implementation 'com.jaredrummler:colorpicker:1.0.1'
+    implementation 'com.amazonaws:aws-android-sdk-core:2.6.9'
+    implementation 'com.amazonaws:aws-android-sdk-s3:2.6.9'
+    implementation 'com.amazonaws:aws-android-sdk-ddb:2.6.9'
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    implementation 'com.github.jkwiecien:EasyImage:2.0.4'
+    implementation 'me.grantland:autofittextview:0.2.1'
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.6.0'
+}
+
+//region DAGGER - DONT CHANGE THIS!!!!
+
+dependencies {
+    // apt command comes from the android-apt plugin
+    implementation 'com.google.dagger:dagger:2.11'
+    annotationProcessor "com.google.dagger:dagger-compiler:2.11"
+    compileOnly 'javax.annotation:jsr250-api:1.0'
+}
+

@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">PACore</string>
+    <string name="permission_remind_title">Permission Denied</string>
+    <string name="permission_remind_button_sure">I\'M SURE</string>
+    <string name="permission_remind_button_retry">RE-TRY</string>
+    <string name="permission_prompt_button_setting">Go to Settings</string>
+    <string name="permission_prompt_button_cancel">Cancel</string>
+    <string name="permission_storage_msg">Without this permission the app can not open image. Are you sure you want to deny this permission?</string>
+    <string name="permission_storage_never_ask_title">Unable to open image !!!</string>
+    <string name="permission_storage_never_ask_msg">You have denied the permission for open image. Please go to app settings and allow permission !!</string>
+    <string name="text_type">[DRAGON]</string>
+    <string name="share">Share</string>
+    <string name="help">Help</string>
+    <string name="gallery">Gallery</string>
+    <string name="upload">Upload</string>
+    <string name="open">Open</string>
+    <string name="cancel">Cancel</string>
+    <string name="dialog_save_title">Save successful!</string>
+    <string name="dialog_save_message">Your image has been saved at:</string>
+
+    <string name="message_rate_app">Would you please rate me? If you need more features, please post your suggestion in review comment !</string>
+    <string name="message_new_version">New version found!! Would you like to update to the new version?</string>
+    <string name="card_name">Card Name</string>
+    <string name="your_name">YOUR NAME</string>
+
+    <string name="message_exit">Are you sure you want to exit app?</string>
+    <string name="message_upgrade_premium">This theme only for premium app version, do you want to upgrade</string>
+    <string name="mes_upload">before uploading again or</string>
+    <string name="upgrade_premium">UPGRADE PREMIUM</string>
+    <string name="please_wait">Please wait</string>
+</resources>
